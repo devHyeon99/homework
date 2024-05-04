@@ -1,0 +1,57 @@
+.avatars-wrapper {
+  padding: 250px 545px;
+}
+
+.avatars {
+  position: relative;
+  margin: 5px 0;
+}
+
+.avatars img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+
+.avatars .circle {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: #4cfe88;
+}
+
+.avatars:nth-child(1) .circle,
+.avatars:nth-child(3) .circle,
+.avatars:nth-child(7) .circle,
+.avatars:nth-child(8) .circle {
+  background-color: #dbdbdb;
+}
+
+.avatars:nth-child(n + 1):nth-child(-n + 4) {
+  float: left;
+}
+.avatars:nth-child(n + 2):nth-child(-n + 4) {
+  margin-left: 20px;
+}
+
+/* clear: both => 다음 행으로 넘기기 위해서 사용 5번째에만 적용을 하면 공간이 생기고 그곳에 6~8번까지 float로 left 정렬을 시킴 */
+.avatars:nth-child(5) {
+  clear: both;
+  float: left;
+}
+
+.avatars:nth-child(n + 6):nth-child(-n + 8) {
+  float: left;
+  margin-left: 20px;
+}
+
+/* @supports (display: flex) {
+  .avatars-wrapper {
+    display: flex;
+    flex-flow: wrap-reverse;
+  }
+} */
