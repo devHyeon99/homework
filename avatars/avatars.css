@@ -49,9 +49,9 @@
   margin-left: 20px;
 }
 
-/* @supports (display: flex) {
+@supports (display: flex) {
   .avatars-wrapper {
     display: flex;
     flex-flow: wrap-reverse;
   }
-} */
+}

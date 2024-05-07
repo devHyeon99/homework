@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>아바타</title>
+  <link rel="stylesheet" href="avatars-feedback.css" />
+</head>
+
+<!-- ul, li로 구조 설계 하신 이유가 뭘까...? => 목록으로 구조화를 하면 스크린리더 환경에서는 목록의 갯수를 알려줍니다.
+그럼 사용자가 몇개의 항목이 있는지 예측할 수 있어 접근성이 좋습니다. 하지만 div 요소 링크 8개를 그룹화만 하면 
+div안에 링크 갯수를 예측할 수 없기때문 입니다. -->
+
+<body>
+  <div class="member-list">
+    <ul>
+      <li>
+        <figure class="members" role="group" aria-label="오프라인 유저">
+          <img src="../images/faces/face1.jpg" alt="유저명" />
+          <figcaption aria-label="오프라인"><span></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="members is-online" role="group" aria-label="온라인 유저">
+          <img src="../images/faces/face2.jpg" alt="유저명" />
+          <figcaption aria-label="온라인"><span></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="members is-block" role="group" aria-label="방해금지 유저">
+          <img src="../images/faces/face3.jpg" alt="유저명" />
+          <figcaption aria-label="방해금지"><span></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="members is-online" role="group" aria-label="온라인 유저">
+          <img src=" ../images/faces/face4.jpg" alt="유저명" />
+          <figcaption aria-label="온라인"><span></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="members is-empty" role="group" aria-label="자리비움 유저">
+          <img src=" ../images/faces/face5.jpg" alt="유저명" />
+          <figcaption aria-label="자리비움"><span></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="members is-online" role="group" aria-label="온라인 유저">
+          <img src=" ../images/faces/face6.jpg" alt="유저명" />
+          <figcaption aria-label="온라인"><span></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="members" role="group" aria-label="오프라인 유저">
+          <img src="../images/faces/face7.jpg" alt="유저명" />
+          <figcaption aria-label="오프라인"><span></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="members" role="group" aria-label="오프라인 유저">
+          <img src="../images/faces/face8.jpg" alt="유저명" />
+          <figcaption aria-label="오프라인"><span></span></figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
