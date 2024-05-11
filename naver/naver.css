@@ -1,0 +1,183 @@
+/* 기본 스타일 */
+:root {
+  --base-font-family: "SUIT Variable", sans-serif;
+  --base-font-size: 1rem;
+  --base-color: #181818;
+  --focus-color: #24388d;
+  --space-size: 1.25rem;
+  --green: #03cf5d;
+  --border-color: #dadada;
+}
+
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  color: var(--base-color);
+  line-height: 1.15;
+  margin: 12.5rem 0;
+  padding: 0;
+}
+
+.logo {
+  width: 230px;
+  margin: 3.125rem auto;
+
+  a {
+    display: inline-block;
+  }
+}
+
+.login-form {
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0 1.25rem;
+  }
+
+  .login-input-group {
+    .form-input {
+      --font-size: 0.875rem;
+      --focus-back-color: #e9f0fd;
+
+      input {
+        width: 100%;
+        font-size: var(--font-size);
+        height: 45px;
+        border: 1px solid var(--border-color);
+        background-color: #fff;
+        padding: 0.0625rem 0.0625rem 0.0625rem 0.5rem;
+        margin: 0.3125rem 0;
+      }
+
+      input:focus {
+        outline: none;
+        border: 1px solid var(--green);
+        background: var(--focus-back-color);
+      }
+    }
+  }
+
+  .login-button {
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    background-color: var(--green);
+    margin-top: var(--space-size);
+    border: none;
+    cursor: pointer;
+  }
+
+  .login-checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.625rem;
+
+    .save-login {
+      display: flex;
+      align-items: center;
+
+      input {
+        background: url(./icons/unchecked.svg) no-repeat 0 0 / 24px 24px;
+        background-repeat: no-repeat;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        margin-right: 0.3125rem;
+      }
+
+      label {
+        cursor: pointer;
+      }
+
+      input:focus-visible {
+        outline: 2px solid var(--focus-color);
+        border-radius: 0.25em;
+      }
+
+      input:checked {
+        background-image: url(./icons/checked.svg);
+        background-repeat: no-repeat;
+      }
+    }
+
+    .ip-security {
+      gap: 0.3125rem;
+
+      a {
+        color: var(--base-color);
+        text-decoration: none;
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--focus-color);
+        border-radius: 0.25em;
+      }
+
+      .toogle-box {
+        position: relative;
+        display: inline-block;
+
+        input {
+          position: absolute;
+          appearance: none;
+        }
+
+        label {
+          cursor: pointer;
+
+          &::before {
+            content: "OFF";
+            color: #ccc;
+          }
+        }
+
+        input:focus-visible + label {
+          outline: 2px solid var(--focus-color);
+          border-radius: 0.25em;
+        }
+
+        input:checked + label {
+          &::before {
+            content: "";
+          }
+          &::after {
+            content: "ON";
+            color: var(--green);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 모바일 화면에서만 적용되는 스타일 */
+@media (max-width: 767px) {
+  .login-form {
+    width: 100%;
+  }
+
+  .ip-security {
+    display: none;
+    background-color: var(--green);
+  }
+
+  .login-checkbox-group {
+    flex-direction: row-reverse;
+  }
+}
+
+/* 데스크탑 화면에서만 적용되는 스타일 */
+@media (min-width: 768px) {
+  .login-form {
+    width: 500px;
+    margin: 0 auto;
+  }
+}

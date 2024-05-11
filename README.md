@@ -5,3 +5,7 @@
 ### 5월 3일 아바타 과제
 
 - [avatars](avatars/avatars.md)
+
+### 5월 10일 네이버 과제
+
+- [naver](naver/naver.md)
