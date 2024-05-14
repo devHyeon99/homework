@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>naver</title>
   <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
   <link rel="stylesheet" href="naver.css" />
@@ -13,8 +13,11 @@
 <body>
   <!-- 로고 이미지 -->
   <h1 class="logo">
-    <a tabindex="-1" href="/" class="logo-link">
-      <img src="./logo.svg" alt="네이버" />
+    <a href="/" class="logo-link">
+      <picture>
+        <source srcset="" sizes="(max-width: 230px)" />
+        <img src="./logo.svg" alt="네이버" />
+      </picture>
     </a>
   </h1>
   <section>
@@ -31,20 +34,20 @@
             <input type="password" id="userPwd" required placeholder="비밀번호" name="userPwd" />
           </div>
         </div>
-        <button tabindex="-1" type="submit" class="login-button button">로그인</button>
         <div role="group" class="login-checkbox-group">
           <div class="save-login form-check">
             <input type="checkbox" id="saveLogin" name="saveLogin">
             <label for="saveLogin">로그인 상태 유지</label>
           </div>
           <div class="ip-security form-check">
-            <a href="./ip_security.html" target="_blank">IP 보안</a>
+            <a href="./ip_security.html" target="_blank" rel="noopener noreferrer">IP 보안</a>
             <div class="toogle-box">
-              <input type="checkbox" id="ipSecurity" name="ipSecurity" />
-              <label for="ipSecurity"></label>
+              <input type="checkbox" id="ipSecurity" name="ipSecurity" aria-label="IP 보안을 켜거나 끌 수 있는 스위치" />
+              <label for=" ipSecurity"></label>
             </div>
           </div>
         </div>
+        <button type="submit" class="login-button button">로그인</button>
       </fieldset>
     </form>
   </section>
