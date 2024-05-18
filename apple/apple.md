@@ -23,6 +23,7 @@
 ### 3. 구현 결과
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CWCt_PMGg8I?si=OpLAZ_F9g4ToBKYK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### 4. 느낀점
 
 > 레이아웃 정렬을 Flex로만 해봤어서 Grid에 대해서는 잘 몰랐는데 좀 더 익숙해질 수 있는 기회가 되었습니다. 하지만 좀 더 복잡한 레이아웃이었다면 Grid 사용이 좀 더 어려웠을거 같아 앞으로도 익숙해질 수 있게 사용해봐야 할 것 같았습니다. 컴포넌트 부분은 flex를 이용하지 않고 inline-block 과 block으로도 구현 해보았는데 다음에 grid로도 컴퍼넌트 안의 요소들을 배치 해보도록 하려고 합니다.
