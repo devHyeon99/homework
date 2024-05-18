@@ -22,8 +22,7 @@
 
 ### 3. 구현 결과
 
-[![Video Label](http://img.youtube.com/vi/CWCt_PMGg8I/0.jpg)]
-(https://youtu.be/CWCt_PMGg8I)
+[![Video Label](http://img.youtube.com/vi/CWCt_PMGg8I/0.jpg)](https://youtu.be/CWCt_PMGg8I)
 
 ### 4. 느낀점
 
