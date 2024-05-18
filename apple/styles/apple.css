@@ -1,0 +1,183 @@
+@import url(reset.css);
+@import url(theme.css);
+@import url(base.css);
+@import url(card-component.css);
+
+/* 카드 레이아웃 */
+
+.container {
+  display: grid;
+  gap: var(--small-spacing);
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "ipadpro"
+    "ipadair "
+    "iphone15pro"
+    "iphone15"
+    "watch"
+    "macbookair"
+    "airpods";
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "ipadpro ipadpro"
+      "ipadair ipadair"
+      "iphone15pro iphone15pro"
+      "iphone15 watch"
+      "macbookair airpods";
+  }
+}
+
+/* 박스 높이 고정 */
+.card-box {
+  height: var(--size);
+}
+
+/* 애플 제품별 스타일링 */
+.ipad-pro {
+  background-image: image-set(
+    url("../products/ipad_pro.jpeg") 1x,
+    url("../products/ipad_pro_2x.jpeg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  grid-area: ipadpro;
+
+  @media (min-width: 1024px) {
+    background-image: image-set(
+      url("../products/ipad_pro_wide.jpeg") 1x,
+      url("../products/ipad_pro_wide_2x.jpeg") 2x
+    );
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.ipad-air {
+  background-image: image-set(
+    url("../products/ipad_air.jpeg") 1x,
+    url("../products/ipad_air_2x.jpeg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--black-200);
+  grid-area: ipadair;
+
+  @media (min-width: 1024px) {
+    background-image: image-set(
+      url("../products/ipad_air_wide.jpeg") 1x,
+      url("../products/ipad_air_wide_2x.jpeg") 2x
+    );
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.iphone-15-pro {
+  background-image: image-set(
+    url("../products/iphone15_pro.jpeg") 1x,
+    url("../products/iphone15_pro_2x.jpeg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  grid-area: iphone15pro;
+
+  p {
+    margin-bottom: var(--x-small-spacing);
+  }
+
+  @media (min-width: 1024px) {
+    background-image: image-set(
+      url("../products/iphone15_pro_wide.jpeg") 1x,
+      url("../products/iphone15_pro_wide_2x.jpeg") 2x
+    );
+  }
+}
+
+.iphone-15 {
+  background-image: image-set(
+    url("../products/iphone15.jpeg") 1x,
+    url("../products/iphone15_2x.jpeg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--black-200);
+  grid-area: iphone15;
+
+  p {
+    margin-bottom: var(--x-small-spacing);
+  }
+
+  @media (min-width: 1024px) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.apple-watch {
+  background-image: image-set(
+    url("../products/apple_watch.jpeg") 1x,
+    url("../products/apple_watch_2x.jpeg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  grid-area: watch;
+
+  p {
+    margin-bottom: var(--x-small-spacing);
+  }
+}
+
+.macbook-air {
+  background-image: image-set(
+    url("../products/macbook_air.jpeg") 1x,
+    url("../products/macbook_air_2x.jpeg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  color: var(--black-200);
+  grid-area: macbookair;
+
+  p {
+    margin-bottom: var(--x-small-spacing);
+  }
+}
+
+.airpods-pro {
+  background-image: image-set(
+    url("../products/airpods_pro.jpeg") 1x,
+    url("../products/airpods_pro_2x.jpeg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  grid-area: airpods;
+
+  p {
+    margin-bottom: var(--x-small-spacing);
+  }
+
+  @media (min-width: 1024px) {
+    br {
+      display: none;
+    }
+  }
+}

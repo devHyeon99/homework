@@ -1,0 +1,68 @@
+@import url(reset.css);
+@import url(theme.css);
+@import url(base.css);
+
+/* 카드 컴포넌트 */
+.card {
+  text-align: center;
+  height: var(--size);
+  padding-top: var(--large-spacing);
+  background-color: black;
+  color: white;
+
+  h2 {
+    font-size: var(--large-text);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: var(--base-text);
+    font-weight: 400;
+    line-height: var(--line-normal);
+    margin-bottom: var(--small-spacing);
+  }
+
+  span {
+    display: block;
+    font-size: var(--small-text);
+    color: var(--gray);
+    /* 출시일 추후 공개 하단 여백도 추가 아니면 결과물가 달라보임 */
+    margin-bottom: var(--small-spacing);
+  }
+}
+
+/* 버튼 컴포넌트 */
+.link-list {
+  li {
+    display: inline-block;
+  }
+
+  .button {
+    display: block;
+    font-size: var(--xx-small-text);
+
+    padding: var(--x-small-spacing) var(--small-spacing);
+    border-radius: var(--base-radius);
+  }
+
+  .button-primary {
+    background-color: var(--blue-300);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--blue-200);
+    }
+  }
+
+  .button-outline-primary {
+    margin-left: var(--base-spacing);
+    border: 1px solid var(--blue-300);
+    color: var(--blue-300);
+
+    &:hover {
+      background-color: var(--blue-300);
+      color: var(--white);
+    }
+  }
+}
