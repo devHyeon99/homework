@@ -22,7 +22,8 @@
 
 ### 3. 구현 결과
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CWCt_PMGg8I?si=OpLAZ_F9g4ToBKYK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Video Label](http://img.youtube.com/vi/CWCt_PMGg8I/0.jpg)]
+(https://youtu.be/CWCt_PMGg8I)
 
 ### 4. 느낀점
 
